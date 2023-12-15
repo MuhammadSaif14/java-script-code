@@ -1,0 +1,33 @@
+<script>
+    
+    var text=prompt("Enter any text: ")
+    var total=0
+    var vowel=0
+    var consonants=0
+    var uppercase=0
+    var lowercase=0
+
+    for(var i=0; i<text.length; i++){
+    total++
+    if(text[i]=="a" || text[i]=="A" || text[i]=="e" || text[i]=="E" || text[i]=="i" || text[i]=="I" || text[i]=="o" ||text[i]=="O" || text[i]=="u" || text[i]=="U" ){
+        vowel++
+    }else{
+        consonants++
+    }
+    if(text[i]=="A" ||text[i]=="B" || text[i]=="C" || text[i]=="D" || text[i]=="E" || text[i]=="F" || text[i]=="I" || text[i]=="J" || text[i]=="K" || text[i]=="L" || text[i]=="M" || text[i]=="N" || text[i]=="O" || text[i]=="P" || text[i]=="Q" || text[i]=="R" || text[i]=="S" || text[i]=="T" || text[i]=="U" || text[i]=="V" || text[i]=="W" || text[i]=="X" || text[i]=="Y" || text[i]=="Z"){
+        uppercase++
+    }else{
+        lowercase++
+    }
+    }
+
+
+    document.write("Total Letters in text: "+total)
+   document.write("<br>Total Vowels in text: "+vowel)
+   document.write("<br>Total Consonants in text: "+consonants)
+   document.write("<br>Total Uppercase Letters in text: "+uppercase)
+   document.write("<br>Total Lowercase Letters in text: "+lowercase)
+
+
+
+    </script>

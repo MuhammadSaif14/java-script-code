@@ -1,0 +1,106 @@
+<script>
+
+var option=parseInt(prompt("Mini Project \nMenu:\n 1 Odd Even \n 2 Calculator\n 3 Marksheet \n 4: Exit   "))
+    
+    switch(option){
+
+                        //<---------------CASE 1--------------->//
+    case 1:{
+        var number=parseInt(prompt("Enter any Number to check Odd or Even Numbers"))
+        if(number%2==0){
+            alert(number+" is even number")
+        }else{
+            alert(number+" is odd number")
+        }
+        break
+    }
+
+                        //<---------------CASE 2--------------->//
+    case 2:{
+        let value1 = parseInt(prompt("Enter value 1:"));
+    let value2 = parseInt(prompt("Enter value 2:"));
+    let operator = prompt("Enter the operator ( + , - , * or % ):");
+    let result;
+    
+    switch (operator) {
+    case "+":
+        result = value1 + value2;
+        alert("Addition: " + result);
+    break;
+    case "-":
+        result = value1 - value2;
+        alert("Subtraction: " + result);
+    break;
+    case "*":
+        result = value1 * value2;
+        alert("Multiplication: " + result);
+    break;
+    case "%":
+        result = value1 % value2;
+        alert("Division: " + result);
+    break;
+        
+      default:
+        alert("InvalClassName operator");
+    }
+     break
+    }
+
+                        //<---------------CASE 3--------------->//
+    case 3:{
+    let value1 = parseInt(prompt("Enter English Marks ?/50:"));
+    let value2 = parseInt(prompt("Enter Maths Marks ?/50:"));
+    let value3 = parseInt(prompt("Enter Physics Marks ?/50:"));
+    let value4 = parseInt(prompt("Enter Chemistry Marks ?/50:"));
+    let value5 = parseInt(prompt("Enter Biology Marks ?/50:"));
+    let value6 = parseInt(prompt("Enter Computer Marks ?/50:"));
+    let value7 = parseInt(prompt("Enter Sindhi Marks ?/50:"));
+    let value8 = parseInt(prompt("Enter Islamiyat Marks ?/50:"));
+
+    let operator = prompt("Enter ( + ) For TOTAL Marks:");
+    let result;
+    
+    switch (operator) {
+    case "+":
+        result = value1 + value2 + value3 + value4 + value5 + value6 + value7 + value8;
+        alert("Total Marks =: " + result);
+    break;
+
+      default:
+        alert("InvalClassName operator");
+    }
+    
+    }
+    default:{
+    
+    document.write("Thanks for using our system")
+    document.write("<br>")
+    }
+    
+    }
+                        //<---------------CASE 4--------------->//
+
+    var Season= (prompt("Enter season "))
+    
+    switch (Season){
+        
+             case "summer":{
+                document.write("Summer = May,June,July")
+                break;
+            }
+            case "spring":{
+                document.write("Spring =Febuary,March,April")
+                break;
+             }
+    
+            case "winter":{
+                document.write("Winter = December,November,January")
+                break;
+            }
+            case "autumn":{
+                document.write("Autumn = Agust,September,Outober")
+                break;
+            }
+           default:document.write("Inaild season Number")
+        }
+</script>
